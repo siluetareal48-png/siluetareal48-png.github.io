@@ -1,172 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silueta Real | Belleza y Poder Femenino</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silueta Real | Ropa Íntima Femenina</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Arial, sans-serif;
-    }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    body {
-      background-color: #0f0f0f;
-      color: #eaeaea;
-      line-height: 1.6;
-    }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-    header {
-      background: linear-gradient(135deg, #000000, #1a1a1a);
-      padding: 80px 20px;
-      text-align: center;
-    }
+body {
+    background: #0f0f14;
+    color: #fff;
+}
 
-    /* LOGO IMAGEN */
-    .logo img {
-      max-width: 220px;
-      margin-bottom: 25px;
-    }
+/* HEADER */
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: 
+        linear-gradient(rgba(114,0,38,0.75), rgba(114,0,38,0.75)),
+        url("imagenes/abstracto-rojo.jpg") center/cover no-repeat;
+}
 
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 15px;
-      color: #ffffff;
-    }
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 35px;
-      color: #cccccc;
-    }
+.logo img {
+    width: 330px;
+    margin-bottom: 15px;
+}
 
-    .btn {
-      display: inline-block;
-      background: #ff2f92;
-      color: #fff;
-      padding: 15px 36px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-      transition: transform 0.2s, background 0.2s;
-    }
+.logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
 
-    .btn:hover {
-      background: #e60073;
-      transform: scale(1.05);
-    }
+header p {
+    margin: 15px 0 25px;
+    font-size: 1.1rem;
+}
 
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    background: #fff;
+    color: #720026;
+}
 
-    section h2 {
-      font-size: 2.4rem;
-      margin-bottom: 20px;
-      color: #ff2f92;
-    }
+/* REDES */
+.redes {
+    margin-top: 20px;
+}
 
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 35px;
-      margin-top: 50px;
-    }
+.redes a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
 
-    .card {
-      background: #1b1b1b;
-      border-radius: 20px;
-      padding: 40px 30px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-    }
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
 
-    .card h3 {
-      color: #ff2f92;
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-    }
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ff4d6d;
+}
 
-    .cta {
-      background: linear-gradient(135deg, #ff2f92, #b8005a);
-      padding: 70px 20px;
-      color: #fff;
-    }
+section p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #ddd;
+}
 
-    .cta h2 {
-      color: #fff;
-    }
+/* BLOQUES */
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
 
-    footer {
-      background: #000;
-      color: #777;
-      text-align: center;
-      padding: 25px;
-      font-size: 0.9rem;
-    }
-  </style>
+.bloque {
+    background: #1c1c24;
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.bloque:hover {
+    transform: translateY(-5px);
+}
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ========================= */
+/* BENEFICIOS (CUADROS PRO)  */
+/* ========================= */
+
+.benefits ul {
+    list-style: none;
+    max-width: 850px;
+    margin: 40px auto 0;
+    padding: 0;
+}
+
+.benefits li {
+    background: #1c1c24;
+    margin-bottom: 18px;
+    padding: 20px 25px 20px 55px;
+    border-radius: 12px;
+    position: relative;
+    text-align: left;
+    font-size: 1.05rem;
+    color: #eee;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.benefits li:hover {
+    transform: translateY(-4px);
+}
+
+/* RAYITA ROJA VERTICAL */
+.benefits li::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    height: calc(100% - 30px);
+    width: 4px;
+    background: linear-gradient(180deg, #ff4d6d, #c9184a);
+    border-radius: 3px;
+}
+
+/* CHECK ✔ */
+.benefits li::after {
+    content: "✓";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff4d6d;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #720026, #c9184a);
+    border-radius: 20px;
+    padding: 50px 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .redes {
+    margin-bottom: 10px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="logo">
-      <img src="logo.png" alt="Silueta Real logo">
+        <img src="imagenes/logo.png" alt="Silueta Real">
+        <h1>MODA PARA MUJERES PODEROSAS</h1>
     </div>
+    <a href="https://wa.me/573157558089" class="btn" target="_blank">Comprar por WhatsApp</a>
+    <a href="https://www.canva.com/design/DAG-ge7wlQk/kStdpPUofxqGlBBWpSXA9Q/view" class="btn" target="_blank">Ver catálogo</a>
 
-    <h1>Silueta Real</h1>
-    <p>Belleza, seguridad y poder en cada detalle</p>
-
-    <a 
-  href="https://wa.me/573153497034?text=Hola%20quiero%20información%20sobre%20los%20productos%20de%20Silueta%20Real%20💖" 
-  class="btn" 
-  target="_blank"
->
-  Comprar por WhatsApp
-</a>
-  </header>
-
-  <section>
-    <h2>Descubre lo que realza tu poder</h2>
-    <p>Diseños pensados para mujeres seguras, auténticas y reales.</p>
-
-    <div class="productos">
-      <div class="card">
-        <h3>Corset</h3>
-        <p>Piezas que estilizan la figura y transmiten seguridad y elegancia.</p>
-      </div>
-
-      <div class="card">
-        <h3>Lencería</h3>
-        <p>Diseños que combinan sensualidad, comodidad y carácter.</p>
-      </div>
-
-      <div class="card">
-        <h3>También puedes encontrar</h3>
-        <p>
-          Accesorios y artículos pensados para complementar la belleza,
-          seguridad y estilo femenino.
-        </p>
-      </div>
+    <div class="redes">
+        <a href="https://www.instagram.com/siluetareal_?igsh=MTh0cGozeGJob2Nldw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61587152081719" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@siluetareal8" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
-  </section>
+</header>
 
-  <section class="cta">
-    <h2>Atención personalizada</h2>
-    <p>Escríbenos y recibe asesoría directa para tu compra.</p>
-    <br>
-    <a href="#" class="btn">Contáctanos</a>
-  </section>
+<section>
+    <h2>Descubre tu mejor versión</h2>
+    <p>Diseños pensados para resaltar tu confianza, sensualidad y estilo.</p>
 
-  <footer>
-    © 2026 Silueta Real · Todos los derechos reservados
-  </footer>
+    <div class="bloques">
+        <a href="#corset" class="bloque">Corset</a>
+        <a href="#lenceria" class="bloque">Lencería</a>
+        <a href="#otros" class="bloque">También puedes encontrar</a>
+    </div>
+</section>
+
+<section id="corset">
+    <h2>Corset</h2>
+    <p>Moldea tu silueta con fuerza, elegancia y actitud.</p>
+    <div class="galeria">
+        <img src="imagenes/corset/corset1.jpg">
+        <img src="imagenes/corset/corset2.jpg">
+        <img src="imagenes/corset/corset3.jpg">
+    </div>
+</section>
+
+<section id="lenceria">
+    <h2>Lencería</h2>
+    <p>Sensualidad y comodidad pensadas para cada mujer.</p>
+    <div class="galeria">
+        <img src="imagenes/lenceria/lenceria1.jpg">
+        <img src="imagenes/lenceria/lenceria2.jpg">
+        <img src="imagenes/lenceria/lenceria3.jpg">
+    </div>
+</section>
+
+<section id="otros">
+    <h2>También puedes encontrar</h2>
+    <p>Accesorios y productos enfocados en la belleza y el bienestar femenino.</p>
+    <div class="galeria">
+        <img src="imagenes/otros/otros1.jpg">
+        <img src="imagenes/otros/otros2.jpg">
+        <img src="imagenes/otros/otros3.jpg">
+    </div>
+</section>
+
+<section class="benefits">
+    <h2>¿Por qué elegir Silueta Real?</h2>
+    <ul>
+        <li>Corset que moldean sin incomodar</li>
+        <li>Lencería elegante y femenina</li>
+        <li>Materiales de alta calidad</li>
+        <li>Diseños exclusivos y fabricación propia</li>
+        <li>Atención personalizada</li>
+    </ul>
+</section>
+
+<section class="cta">
+    <p>En Silueta Real diseñamos y fabricamos corset y lencería femenina pensados para brindar comodidad, elegancia y un ajuste perfecto.</p>
+    <h2>Trabajamos al mayor y al detal… ¡Haz tu pedido hoy!</h2>
+    <p>Atención personalizada y asesoría directa.</p>
+    <a href="https://wa.me/573153497034" class="btn" target="_blank">Escríbenos por WhatsApp</a>
+</section>
+
+<footer>
+    <div class="redes">
+        <a href="https://www.instagram.com/siluetareal_?igsh=MTh0cGozeGJob2Nldw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61587152081719" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@siluetareal8" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    © 2026 Silueta Real — Marca creada para mujeres poderosas
+</footer>
 
 </body>
 </html>
